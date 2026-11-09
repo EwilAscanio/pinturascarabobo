@@ -1,4 +1,4 @@
-import { MapPin, Clock, Navigation } from 'lucide-react';
+import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
 import { buildWhatsAppUrl, resolveGoogleMapsUrl } from '../data/sucursales.js';
 
 function WhatsAppIcon({ className = 'w-4 h-4' }) {
@@ -59,19 +59,25 @@ export function SucursalCard({ sucursal, index = 0 }) {
           <p className="font-medium text-slate-100 leading-relaxed">{sucursal.direccion}</p>
         </div>
 
-        <div className="flex items-center justify-between gap-2 pt-0.5">
-          <div className="flex items-center gap-2">
-            <Clock
-              className={`h-4 w-4 shrink-0 ${
-                esPrincipal ? 'text-[#FBBF24]' : 'text-[#38BDF8]'
-              }`}
-              aria-hidden="true"
-            />
-            <span className="text-xs text-slate-300 font-medium tabular-nums whitespace-nowrap">
-              {sucursal.horario}
-            </span>
-          </div>
-          <span className="text-xs text-[#FBBF24] font-semibold tabular-nums whitespace-nowrap">
+        <div className="flex items-center gap-2 pt-0.5">
+          <Clock
+            className={`h-4 w-4 shrink-0 ${
+              esPrincipal ? 'text-[#FBBF24]' : 'text-[#38BDF8]'
+            }`}
+            aria-hidden="true"
+          />
+          <span className="text-xs text-slate-300 font-medium tabular-nums">
+            {sucursal.horario}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Phone
+            className={`h-4 w-4 shrink-0 ${
+              esPrincipal ? 'text-[#FBBF24]' : 'text-[#38BDF8]'
+            }`}
+            aria-hidden="true"
+          />
+          <span className="text-xs text-[#FBBF24] font-semibold tabular-nums">
             {sucursal.whatsapp}
           </span>
         </div>

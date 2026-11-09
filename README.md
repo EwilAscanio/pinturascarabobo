@@ -44,7 +44,7 @@ Para publicar, se despliega el contenido de `dist/`. Esa carpeta no se versiona:
 ```text
 index.html              Metadatos, Open Graph y datos estructurados
 public/logo.PNG         Logotipo y favicon
-public/og-preview.svg   Imagen para compartir el enlace
+public/og-preview.png   Imagen para compartir el enlace
 src/main.jsx            Punto de entrada
 src/App.jsx             Composición de la página
 src/components/         Cabecera y tarjeta de sucursal
@@ -68,7 +68,7 @@ Los textos, teléfonos y mapas viven en `src/data/sucursales.js`. La interfaz so
 | `enlaceMaps` | Pin de Google Maps. El valor `#` indica que todavía no hay pin |
 | `coordenadasMapsQuery` | Búsqueda de respaldo cuando `enlaceMaps` es `#` o está vacío |
 
-El nombre de El Viñedo en `index.html` (datos estructurados) debe coincidir con `nombre` de esa sede. La imagen `public/og-preview.svg` es independiente y conserva el sello «Sede Central».
+El nombre de El Viñedo en `index.html` (datos estructurados) debe coincidir con `nombre` de esa sede. `public/og-preview.png` es la imagen que WhatsApp muestra al compartir el enlace.
 
 ## Mapas
 

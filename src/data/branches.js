@@ -13,7 +13,6 @@ export const BRANCH_LOCATIONS = [
     cornerStroke: 'blue-lg',
     mapsUrl: 'https://maps.app.goo.gl/egF9ErQRty1KosFB7',
     mapsQuery: 'Locatel El Viñedo, Valencia, Edo. Carabobo, Venezuela',
-    zone: 'El Viñedo, Valencia',
     whatsappGreeting:
       'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo El Viñedo.',
   },
@@ -29,7 +28,6 @@ export const BRANCH_LOCATIONS = [
     cornerStroke: 'yellow',
     mapsUrl: 'https://maps.app.goo.gl/NHPSADARHPNEpKkX7',
     mapsQuery: 'Av. Don Julio Centeno, Sector Castillito, San Diego, Carabobo, Venezuela',
-    zone: 'San Diego, Av. Don Julio Centeno',
     whatsappGreeting:
       'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo San Diego.',
   },
@@ -45,7 +43,6 @@ export const BRANCH_LOCATIONS = [
     cornerStroke: 'blue-sm',
     mapsUrl: '#',
     mapsQuery: 'Av. Cuatricentenario, Los Nísperos, Valencia, Carabobo, Venezuela',
-    zone: 'Av. Cuatricentenario, Los Nísperos',
     whatsappGreeting:
       'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo Cuatricentenario.',
   },
@@ -60,7 +57,6 @@ export const BRANCH_LOCATIONS = [
     cornerStroke: 'yellow',
     mapsUrl: 'https://maps.app.goo.gl/4tY6RKdy9iwoEvqE7',
     mapsQuery: 'El Viñedo, Valencia, Edo. Carabobo, Venezuela',
-    zone: 'El Viñedo (Línea Industrial)',
     whatsappGreeting:
       'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo Industrial.',
   },

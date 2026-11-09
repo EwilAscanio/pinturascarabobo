@@ -1,6 +1,0 @@
-{
-  "name": "Pinturas Carabobo - Ubicaciones y Contacto",
-  "description": "Micropágina oficial de ubicaciones y contacto directo por WhatsApp y GPS de Pinturas Carabobo en Valencia y San Diego, Edo. Carabobo.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

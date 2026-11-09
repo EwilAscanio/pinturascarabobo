@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #031026;
+    color: #ffffff;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Montserrat', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Las sedes entran desde abajo, en cascada, y se elevan al pasar el cursor. */
+@keyframes entrada-tarjeta {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes entrada-acciones {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.tarjeta-sede {
+  transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tarjeta-sede:hover {
+  transform: translateY(-6px);
+}
+
+.tarjeta-sede-cuerpo {
+  animation: entrada-tarjeta 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(0.08s + (var(--orden, 0) * 0.12s));
+  transition:
+    box-shadow 280ms ease,
+    border-color 280ms ease;
+}
+
+.tarjeta-sede:hover .tarjeta-sede-cuerpo {
+  border-color: #f5c400;
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, 0.42),
+    0 0 26px rgba(245, 196, 0, 0.28);
+}
+
+.tarjeta-sede-destacada:hover .tarjeta-sede-cuerpo {
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.4),
+    0 0 34px rgba(245, 196, 0, 0.5),
+    inset 0 1px 12px rgba(245, 196, 0, 0.16);
+}
+
+.tarjeta-sede-acciones {
+  animation: entrada-acciones 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(0.28s + (var(--orden, 0) * 0.12s));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tarjeta-sede,
+  .tarjeta-sede-cuerpo,
+  .tarjeta-sede-acciones {
+    animation: none;
+    transition: none;
+  }
+
+  .tarjeta-sede:hover {
+    transform: none;
+  }
+}

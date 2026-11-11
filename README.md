@@ -75,9 +75,7 @@ Los textos, teléfonos y mapas viven en `src/data/branches.js`. La interfaz reco
 
 ## Mapas
 
-El Viñedo, San Diego e Industrial abren su pin (`maps.app.goo.gl`).
-
-Cuatricentenario todavía no tiene pin. Su `mapsUrl` es `#`, y «Cómo llegar» abre una búsqueda de Google Maps con `mapsQuery`. Cuando exista el enlace definitivo, se reemplaza ese `#` por la URL del pin.
+Las cuatro sedes abren su pin (`maps.app.goo.gl`). Si alguna volviera a tener `mapsUrl` en `#`, «Cómo llegar» abriría una búsqueda de Google Maps con `mapsQuery`.
 
 ## Pruebas
 
@@ -85,4 +83,4 @@ Cuatricentenario todavía no tiene pin. Su `mapsUrl` es `#`, y «Cómo llegar» 
 npm test
 ```
 
-Las pruebas cubren las cuatro sedes, la limpieza de los teléfonos venezolanos, el mensaje de WhatsApp de El Viñedo, la conservación de los pines existentes y la búsqueda de respaldo de Cuatricentenario.
+Las pruebas cubren las cuatro sedes, la limpieza de los teléfonos venezolanos, el mensaje de WhatsApp de El Viñedo y la conservación de los pines de Google Maps.

@@ -45,7 +45,10 @@ test('BRANCH_LOCATIONS contiene las 4 sedes oficiales con teléfono, dirección 
 
   assert.equal(industrial.name, 'Pinturas Carabobo Industrial');
   assert.equal(industrial.phoneDisplay, '+58 414-4234751');
-  assert.equal(industrial.address, 'Justo al lado de la sede central en El Viñedo.');
+  assert.equal(
+    industrial.address,
+    'Avenida Carlos Sanda, Ubicado entre Locatel y el restaurante Imperial Garden. Justo al lado de la sede central en El Viñedo.'
+  );
   assert.equal(
     industrial.whatsappGreeting,
     'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo Industrial.'
@@ -69,12 +72,9 @@ test('buildWhatsAppUrl arma wa.me con el mensaje oficial codificado', () => {
   assert.equal(urlWithMessage, `https://wa.me/584244534470?text=${expectedEncoded}`);
 });
 
-test('buildGoogleMapsUrl conserva el pin oficial y busca Cuatricentenario', () => {
-  assert.equal(buildGoogleMapsUrl(BRANCH_LOCATIONS[0]), 'https://maps.app.goo.gl/egF9ErQRty1KosFB7');
-  assert.equal(buildGoogleMapsUrl(BRANCH_LOCATIONS[1]), 'https://maps.app.goo.gl/NHPSADARHPNEpKkX7');
-  assert.equal(buildGoogleMapsUrl(BRANCH_LOCATIONS[3]), 'https://maps.app.goo.gl/4tY6RKdy9iwoEvqE7');
-
-  const cuatricentenario = buildGoogleMapsUrl(BRANCH_LOCATIONS[2]);
-  assert.ok(cuatricentenario.startsWith('https://www.google.com/maps/search/?api=1&query='));
-  assert.ok(decodeURIComponent(cuatricentenario).includes('Av. Cuatricentenario'));
+test('buildGoogleMapsUrl conserva el pin oficial de las cuatro sedes', () => {
+  assert.equal(buildGoogleMapsUrl(BRANCH_LOCATIONS[0]), 'https://maps.app.goo.gl/WZeQFzVRpWhy5jvt5');
+  assert.equal(buildGoogleMapsUrl(BRANCH_LOCATIONS[1]), 'https://maps.app.goo.gl/J1eNfbmsxmHxpFhr5');
+  assert.equal(buildGoogleMapsUrl(BRANCH_LOCATIONS[2]), 'https://maps.app.goo.gl/oMn1Vc7L2yR4w72c9');
+  assert.equal(buildGoogleMapsUrl(BRANCH_LOCATIONS[3]), 'https://maps.app.goo.gl/J8spCfa9p7pDRsEHA');
 });

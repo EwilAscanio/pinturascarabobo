@@ -11,7 +11,7 @@ export const BRANCH_LOCATIONS = [
     phoneDisplay: '+58 424-4534470',
     phoneRaw: '584244534470',
     cornerStroke: 'blue-lg',
-    mapsUrl: 'https://maps.app.goo.gl/egF9ErQRty1KosFB7',
+    mapsUrl: 'https://maps.app.goo.gl/WZeQFzVRpWhy5jvt5',
     mapsQuery: 'Locatel El Viñedo, Valencia, Edo. Carabobo, Venezuela',
     whatsappGreeting:
       'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo El Viñedo.',
@@ -26,7 +26,7 @@ export const BRANCH_LOCATIONS = [
     phoneDisplay: '+58 414-4070847',
     phoneRaw: '584144070847',
     cornerStroke: 'yellow',
-    mapsUrl: 'https://maps.app.goo.gl/NHPSADARHPNEpKkX7',
+    mapsUrl: 'https://maps.app.goo.gl/J1eNfbmsxmHxpFhr5',
     mapsQuery: 'Av. Don Julio Centeno, Sector Castillito, San Diego, Carabobo, Venezuela',
     whatsappGreeting:
       'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo San Diego.',
@@ -41,7 +41,7 @@ export const BRANCH_LOCATIONS = [
     phoneDisplay: '+58 414-4070344',
     phoneRaw: '584144070344',
     cornerStroke: 'blue-sm',
-    mapsUrl: '#',
+    mapsUrl: 'https://maps.app.goo.gl/oMn1Vc7L2yR4w72c9',
     mapsQuery: 'Av. Cuatricentenario, Los Nísperos, Valencia, Carabobo, Venezuela',
     whatsappGreeting:
       'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo Cuatricentenario.',
@@ -50,12 +50,12 @@ export const BRANCH_LOCATIONS = [
     id: 'industrial',
     name: 'Pinturas Carabobo Industrial',
     isFeatured: false,
-    address: 'Justo al lado de la sede central en El Viñedo.',
+    address: 'Avenida Carlos Sanda, Ubicado entre Locatel y el restaurante Imperial Garden. Justo al lado de la sede central en El Viñedo.',
     schedule: 'Lun a Sáb: 8:00 AM - 5:00 PM',
     phoneDisplay: '+58 414-4234751',
     phoneRaw: '584144234751',
     cornerStroke: 'yellow',
-    mapsUrl: 'https://maps.app.goo.gl/4tY6RKdy9iwoEvqE7',
+    mapsUrl: 'https://maps.app.goo.gl/J8spCfa9p7pDRsEHA',
     mapsQuery: 'El Viñedo, Valencia, Edo. Carabobo, Venezuela',
     whatsappGreeting:
       'Hola Pinturas Carabobo, me comunico desde Instagram. Quisiera información sobre Pinturas Carabobo Industrial.',
